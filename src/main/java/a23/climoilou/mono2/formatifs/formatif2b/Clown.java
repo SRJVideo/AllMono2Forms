@@ -5,7 +5,7 @@ import org.springframework.stereotype.Component;
 import java.time.LocalDateTime;
 
 @Component
-public class Clown {
+public class Clown implements ArtisteI {
 
     public String performe(LocalDateTime time) {
         return "je fais le clown à " + time.toString();
