@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Primary
 @Component
 public class Clown implements ArtisteI {
 
