@@ -14,7 +14,7 @@ public class ClownPerturbateur extends Clown {
 
 
     @Autowired
-    public ClownPerturbateur(JongleurConcentre jongleur) {
+    public ClownPerturbateur(@Lazy JongleurConcentre jongleur) {
         this.jongleur = jongleur;
     }
 
