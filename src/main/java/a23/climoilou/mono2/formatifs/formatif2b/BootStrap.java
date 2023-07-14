@@ -28,7 +28,13 @@ public class BootStrap implements CommandLineRunner {
 //        System.out.println(artiste.performe(LocalDateTime.now()));
 
 
-        Cirque cirque = context.getBean("cirque", Cirque.class);
-        cirque.performe();
+//        Cirque cirque = context.getBean("cirque", Cirque.class);
+//        cirque.performe();
+
+        ClownPerturbateur clownPerturbateur = context.getBean("clownPerturbateur", ClownPerturbateur.class);
+        System.out.println(clownPerturbateur.performe(LocalDateTime.now()));
+
+        JongleurConcentre jongleurConcentre = context.getBean("jongleurConcentre", JongleurConcentre.class);
+        System.out.println(jongleurConcentre.performe(LocalDateTime.now()));
     }
 }
