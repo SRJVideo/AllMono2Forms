@@ -18,11 +18,11 @@ public class BootStrap implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        Clown clown = (Clown) context.getBean("clown");
-        System.out.println(clown.performe(LocalDateTime.now()));
-
-        Jongleur jongleur = (Jongleur) context.getBean("jongleur");
-        System.out.println(jongleur.performe(LocalDateTime.now()));
+//        Clown clown = (Clown) context.getBean("clown");
+//        System.out.println(clown.performe(LocalDateTime.now()));
+//
+//        Jongleur jongleur = (Jongleur) context.getBean("jongleur");
+//        System.out.println(jongleur.performe(LocalDateTime.now()));
 
         ArtisteI artiste = context.getBean(ArtisteI.class);
         System.out.println(artiste.performe(LocalDateTime.now()));

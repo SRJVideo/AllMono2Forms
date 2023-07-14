@@ -1,10 +1,12 @@
 package a23.climoilou.mono2.formatifs.formatif2b;
 
 import org.springframework.context.annotation.Primary;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
+@Profile("amuseur")
 @Component
 public class Clown implements ArtisteI {
 
