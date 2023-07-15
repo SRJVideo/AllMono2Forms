@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs.formatif2b;
+package a23.climoilou.mono2.formatifs;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs.formatif2b;
+package a23.climoilou.mono2.formatifs;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.context.annotation.Profile;
@@ -6,16 +6,11 @@ import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
 
-@Profile("amuseur")
+@Profile("performeur")
 @Component
-public class Clown implements ArtisteI {
-
+public class Jongleur implements ArtisteI {
     public String performe(LocalDateTime time) {
-        return "je fais le clown à " + time.toString();
+        return "Je jongle à " + time.toString();
     }
 
-    @Override
-    public String toString() {
-        return "Clown";
-    }
 }

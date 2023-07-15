@@ -11,8 +11,13 @@
 	<groupId>a23.climoilou.mono2.formatifs</groupId>
 	<artifactId>formatif2b</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>formatif2b</name>
 	<description>Dans le cadre du cours Monoposte 2</description>
+	<modules>
+		<module>controleur</module>
+		<module>modele</module>
+	</modules>
 	<properties>
 		<java.version>17</java.version>
 	</properties>

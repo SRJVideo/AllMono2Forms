@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs.formatif2b;
+package a23.climoilou.mono2.formatifs;
 
 import java.time.LocalDateTime;
 
