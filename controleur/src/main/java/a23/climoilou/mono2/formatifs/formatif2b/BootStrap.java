@@ -1,5 +1,6 @@
 package a23.climoilou.mono2.formatifs.formatif2b;
 
+import a23.climoilou.mono2.formatifs.artistesSupplementaires.Dresseur;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -28,13 +29,16 @@ public class BootStrap implements CommandLineRunner {
 //        System.out.println(artiste.performe(LocalDateTime.now()));
 
 
-        Cirque cirque = context.getBean("cirque", Cirque.class);
-        System.out.println(cirque.performeAll());
+//        Cirque cirque = context.getBean("cirque", Cirque.class);
+//        System.out.println(cirque.performeAll());
 
 //        ClownPerturbateur clownPerturbateur = context.getBean("clownPerturbateur", ClownPerturbateur.class);
 //        System.out.println(clownPerturbateur.performe(LocalDateTime.now()));
 //
 //        JongleurConcentre jongleurConcentre = context.getBean("jongleurConcentre", JongleurConcentre.class);
 //        System.out.println(jongleurConcentre.performe(LocalDateTime.now()));
+
+        Dresseur dresseur = context.getBean(Dresseur.class);
+        System.out.println(dresseur.performe(LocalDateTime.now()));
     }
 }
