@@ -1,7 +1,6 @@
-package a23.climoilou.mono2.formatifs;
+package a23.climoilou.mono2.formatifs.formatif2b;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDateTime;
@@ -10,7 +9,7 @@ import java.time.LocalDateTime;
 @Component
 public class JongleurConcentre extends Jongleur {
 
-    private ClownPerturbateur clown;
+    private final ClownPerturbateur clown;
 
     @Autowired
     public JongleurConcentre(ClownPerturbateur clown) {

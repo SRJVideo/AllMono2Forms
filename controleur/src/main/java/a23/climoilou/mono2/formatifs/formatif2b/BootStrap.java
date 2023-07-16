@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs;
+package a23.climoilou.mono2.formatifs.formatif2b;
 
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 @Component
 public class BootStrap implements CommandLineRunner {
-    private ApplicationContext context;
+    private final ApplicationContext context;
 
     // la classe BootStrap recevra automatiquement le context lors de sa création grace à ce constructeur.
     public BootStrap(ApplicationContext context) {

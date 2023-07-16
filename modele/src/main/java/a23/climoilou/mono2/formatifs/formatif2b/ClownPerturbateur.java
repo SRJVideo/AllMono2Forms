@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs;
+package a23.climoilou.mono2.formatifs.formatif2b;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Lazy;
@@ -10,7 +10,7 @@ import java.time.LocalDateTime;
 @Primary
 @Component
 public class ClownPerturbateur extends Clown {
-    private JongleurConcentre jongleur;
+    private final JongleurConcentre jongleur;
 
 
     @Autowired

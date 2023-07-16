@@ -1,4 +1,4 @@
-package a23.climoilou.mono2.formatifs;
+package a23.climoilou.mono2.formatifs.formatif2b;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
