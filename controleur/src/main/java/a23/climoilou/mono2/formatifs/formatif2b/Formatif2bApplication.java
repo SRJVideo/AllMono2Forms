@@ -1,7 +1,9 @@
 package a23.climoilou.mono2.formatifs.formatif2b;
 
+import a23.climoilou.mono2.formatifs.artistesSupplementaires.Acrobate;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
@@ -14,6 +16,11 @@ public class Formatif2bApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(Formatif2bApplication.class, args);
+    }
+
+    @Bean(name = "acrobate")
+    Acrobate fabriqueAcrobate() {
+        return new Acrobate();
     }
 
 }

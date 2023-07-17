@@ -1,5 +1,6 @@
 package a23.climoilou.mono2.formatifs.formatif2b;
 
+import a23.climoilou.mono2.formatifs.artistesSupplementaires.Acrobate;
 import a23.climoilou.mono2.formatifs.artistesSupplementaires.Dresseur;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.ApplicationContext;
@@ -40,5 +41,8 @@ public class BootStrap implements CommandLineRunner {
 
         Dresseur dresseur = context.getBean(Dresseur.class);
         System.out.println(dresseur.performe(LocalDateTime.now()));
+
+        Acrobate acrobate = context.getBean("acrobate", Acrobate.class);
+        System.out.println(acrobate.performe(LocalDateTime.now()));
     }
 }
