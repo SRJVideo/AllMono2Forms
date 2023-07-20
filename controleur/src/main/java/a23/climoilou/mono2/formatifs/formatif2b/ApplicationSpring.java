@@ -9,9 +9,9 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 
-@ComponentScan("a23.climoilou.mono2.formatifs")  //on scan le parent des 2 dossiers
+//@ComponentScan("a23.climoilou.mono2.formatifs")  //on scan le parent des 2 dossiers
 //ou on indique chaque dossier précisément:
-@ComponentScan(basePackages = {"a23.climoilou.mono2.formatifs.formatif2b", "a23.climoilou.mono2.formatifs.artistesSupplementaires"})
+@ComponentScan(basePackages = {"a23.climoilou.mono2.formatifs.formatif2b", "a23.climoilou.mono2.formatifs.artistesSupplementaires", "net.rgielen.fxweaver.spring.boot.autoconfigure"})
 
 public class ApplicationSpring {
 
