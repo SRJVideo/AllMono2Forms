@@ -1,6 +1,7 @@
 package a23.climoilou.mono2.formatifs.formatif2b;
 
 import a23.climoilou.mono2.formatifs.formatif2b.controleurFX.SpringFXControleur;
+import a23.climoilou.mono2.formatifs.formatif2b.controleurFX.SpringFXControleur2;
 import javafx.application.Application;
 import javafx.application.Platform;
 import javafx.scene.Parent;
@@ -40,6 +41,7 @@ public class ApplicationFX extends Application {
 
         FxWeaver fxWeaver = context.getBean(FxWeaver.class);
 
+        // premiere fenetre
         FxControllerAndView<SpringFXControleur, AnchorPane> controllerAndView = fxWeaver.load(SpringFXControleur.class);
         Parent root = controllerAndView.getView().get();
 
@@ -49,6 +51,13 @@ public class ApplicationFX extends Application {
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
 
+        //seconde fenetre
+        FxControllerAndView<SpringFXControleur2, AnchorPane> controllerAndView2 = fxWeaver.load(SpringFXControleur2.class);
+        Parent root2 = controllerAndView2.getView().get();
+
+        Stage secondSTage = new Stage();
+        secondSTage.setScene(new Scene(root2));
+        secondSTage.show();
     }
 
     // Pas de main dans cette classe, l'application va être lancée à partir de Application Spring !

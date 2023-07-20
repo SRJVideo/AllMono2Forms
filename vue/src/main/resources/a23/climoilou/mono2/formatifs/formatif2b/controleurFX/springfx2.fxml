@@ -5,7 +5,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 
 <AnchorPane prefHeight="142.0" prefWidth="240.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="climoilou.a22.mono2.application.controller.SpringFXController2">
+            fx:controller="a23.climoilou.mono2.formatifs.formatif2b.controleurFX.SpringFXControleur2">
    <children>
       <Label layoutX="41.0" layoutY="27.0" text="La réponse"/>
       <TextField fx:id="reponseTextField" layoutX="41.0" layoutY="67.0"/>
