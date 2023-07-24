@@ -58,6 +58,17 @@ public class ApplicationFX extends Application {
         Stage secondSTage = new Stage();
         secondSTage.setScene(new Scene(root2));
         secondSTage.show();
+
+        // troisième fenetre
+        FxControllerAndView<SpringFXControleur, AnchorPane> controllerAndView3 = fxWeaver.load(SpringFXControleur.class);
+        Parent root3 = controllerAndView3.getView().get();
+
+        SpringFXControleur springFXControleur3 = controllerAndView3.getController();
+        springFXControleur3.setMessage("tertiary stage");
+
+        Stage stage3 = new Stage();
+        stage3.setScene(new Scene(root3));
+        stage3.show();
     }
 
     // Pas de main dans cette classe, l'application va être lancée à partir de Application Spring !
