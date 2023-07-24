@@ -5,10 +5,12 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 import net.rgielen.fxweaver.core.FxmlView;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 
 @FxmlView("springfx.fxml")
+@Scope("prototype")
 @Component
 public class SpringFXControleur {
 
